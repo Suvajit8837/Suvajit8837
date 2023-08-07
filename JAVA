@@ -1,0 +1,28 @@
+abstract class A
+{
+	int c;
+	public abstract void sum(int a ,int b);
+	public void result()
+	{
+		System.out.println("Result="+c);
+	}
+	
+}
+class B extends A
+{
+	public void sum(int a,int b)
+	{
+		c=a+b;
+	}
+}
+public class EXAM 
+{
+
+	public static void main(String[] args) 
+	{
+		A obj=new B();
+		obj.sum(10, 200);
+		obj.result();
+	}
+
+}
